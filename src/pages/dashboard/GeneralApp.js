@@ -1,12 +1,7 @@
 import React from "react";
 
 const GeneralApp = () => {
-
-  return (
-    <>
-      App
-    </>
-  );
+  return <>Appsss</>;
 };
 
 export default GeneralApp;
