@@ -82,7 +82,7 @@ const ChatElement = ({ id, name, img, msg, time, unread, online }) => {
           <Typography sx={{ fontWeight: 600 }} variant="caption">
             {time}
           </Typography>
-          <Badge color="primary" badgeContent={2}></Badge>
+          <Badge color="primary" badgeContent={unread}></Badge>
         </Stack>
       </Stack>
     </Box>
@@ -121,10 +121,10 @@ function Chats() {
   return (
     <Box
       sx={{
-        position: "fixed",
+        position: "relative",
         height: "100vh",
-        top: "0px",
-        left: "100px",
+        // top: "0px",
+        // left: "100px",
         width: "320px",
         backgroundColor:
           theme.palette.mode === "light"
